@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FISERV</title>
+    
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-image: url('Wallpaper3_1920x1080.png');
+        background-size: cover;
+        background-repeat: repeat; /* Cambiado a 'repeat' */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        max-width: 95%;
+        border-radius: 20px;
+        overflow: hidden;
+        table-layout: auto;
+    }
+    th, td {
+        border: 1px solid #fff;
+        padding: 12px;
+        text-align: left;
+        font-size: 30px; /* Cambiar el tamaño de la fuente */
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+        color: #FFA500; /* Cambiar el color del texto */
+    }
+    th {
+        background-color: #333;
+    }
+    tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    tr:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .message {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #fixed-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000; /* Asegura que el encabezado fijo esté encima de la tabla desplazable */
+    }
+    #scrolling-table {
+        margin-top: 100px; /* Espacio entre el encabezado fijo y la tabla desplazable */
+        overflow-y: auto;
+        max-height: calc(100vh - 100px); /* Altura máxima para que la tabla sea desplazable */
+        width: 100%;
+    }
+</style>
+
+</head>
+<body>
+
+    <div id="fixed-header">
+        <p style="font-size: 30px; font-weight: bold; color: #FFA500;">TABLERO DE VISUALIZACION DE PROCESOS DE EMBOZADO</p>
+        <p style="font-size: 30px; font-weight: bold; color: #FFA500;">FECHA, NOMBRE JOB, NRO. EXTENSION, DESCRIPCION, TIPO PROCESO, CANT. TARJETAS, ESTADO</p>
+    </div>
+    
+<div id="scrolling-table">
+    <table>
+        <thead>
+            <tr>
+                <th>FECHA</th>
+                <th>NOMBRE JOB</th>
+                <th>NRO. EXTENSION</th>
+                <th>DESCRIPCION</th>
+                <th>TIPO PROCESO</th>
+                <th>CANT. TARJETAS</th>
+                <th>ESTADO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>15/04/24</td><td>SOW4007B</td><td>3047</td><td>R-MC BLACK RA             </td><td>R</td><td> 14352</td><td>51</td><td>                                      </td></tr><tr><td>15/04/24</td><td>SOW4007B</td><td>3143</td><td>R-CENCO BLK-43            </td><td>R</td><td>    13</td><td>51</td><td>                                      </td></tr><tr><td>15/04/24</td><td>SOW4007B</td><td>3165</td><td>R-NATIVAB071ARG           </td><td>R</td><td>   511</td><td>51</td><td>                                      </td></tr><tr><td>15/04/24</td><td>SOW4007B</td><td>3167</td><td>R-NATIVAP071ARG           </td><td>R</td><td>   500</td><td>51</td><td>                                      </td></tr><tr><td>15/04/24</td><td>SOW4007B</td><td>3253</td><td>R-E048 PLAT ESP           </td><td>R</td><td>     1</td><td>51</td><td>                                      </td></tr><tr><td>15/04/24</td><td>SOW4007B</td><td>3255</td><td>R-E048 BLACK ES           </td><td>R</td><td>     1</td><td>51</td><td>                                      </td></tr>
+        </tbody>
+    </table>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+<p style="font-size: 30px; font-weight: bold; color: #FFA500;">6 archivos pendientes de embozado  </p>
+<p style="font-size: 30px; font-weight: bold; color: #FFA500;">EMVlab 2.0</p>
+<p style="font-size: 30px; font-weight: bold; color: #FFA500;">Estado 51 JOB pendientes de Embozado</p>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+FECHA;NOMBRE JOB;NRO. EXTENSION;DESCRIPCION;TIPO PROCESO;CANT. TARJETAS;ESTADO;                     
+20/05/19;SOW1006T;0001;A-MC REGIONAL             ;A;     3;51;                                      
+20/05/19;SOW1006T;0002;A-MC INTERNAC             ;A;    38;51;                                      
+20/05/19;SOW1006T;0003;A-MC GOLD                 ;A;     1;51;                                      
+20/05/19;SOW1006T;0004;A-PLATINUM                ;A;     2;51;                                      
+20/05/19;SOW1006T;0026;A-ARGENCARD               ;A;     2;51;                                      
+20/05/19;SOW1006T;0056;A-TARJ HOGARNET           ;A;     2;51;                                      
+20/05/19;SOW1006T;0073;A-CARTA AUTOMAT           ;A;    36;51;                                      
+20/05/19;SOW1006T;0129;A-CENCO AZUL VT           ;A;     1;51;                                      
+20/05/19;SOW1006T;0221;A-MC INT 148              ;A;    40;51;                                      
+20/05/19;SOW1006T;0227;A-MC INT 148              ;A;     4;51;                                      
+13/05/19;SOW4007B;0010;R-PREMIER                 ;R;  6147;51;                                      
+13/05/19;SOW4007B;0012;R-WAL MART                ;R;    30;51;                                      
+13/05/19;SOW4007B;0016;R-NATIVA MCI              ;R; 27377;51;                                      
+11/03/19;SOW4007B;0019;R-GE                      ;R;     3;51;                                      
+11/04/19;SOW4007B;0019;R-GE                      ;R;     4;51;                                      
+13/05/19;SOW4007B;0019;R-GE                      ;R;     9;51;          

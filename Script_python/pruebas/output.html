@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Procesos de Embozado</title>
+   
+    
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Amasis MT Pro Black,  Bold Italic;
+        font-size: 35px;
+        color: white;
+        background-image: url('Wallpaper3_1920x1080.png');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .board {
+        border: 5px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding:30px;
+        box-shadow:0 0 3px 10px rgba(23, 9, 26);
+        
+        
+        width: 80%;
+        max-width: 800px;
+        position: relative;
+    }
+    .line {
+        margin: 10px 0;
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        animation: slide-in 1s forwards;
+    }
+    .line:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background-color: #ccc;
+        border-radius: 50%;
+    }
+    @keyframes slide-in {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="board">
+        <h1>Tablero de Visualización Procesos de Embozado</h1>
+            <marquee style="border:#B0AEAE 2px SOLID">FIRST DATA IS NOW FISERV.</marquee><marquee bgcolor="#FE7217">  ESTADO 51 JOB PENDIENTES DE EMBOZADO </marquee><footer><a href ="javascript:location.reload()">Actualizar</a></footer>
+        <p class="line">; FECHA NOMBRE JOB NRO. EXTENSION DESCRIPCION TIPO PROCESO CANT. TARJETAS ESTADO                       ;</p><p class="line">; 20/05/19 SOW1006T 0001 A-MC REGIONAL              A      3 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0002 A-MC INTERNAC              A     38 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0003 A-MC GOLD                  A      1 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0004 A-PLATINUM                 A      2 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0026 A-ARGENCARD                A      2 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0056 A-TARJ HOGARNET            A      2 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0073 A-CARTA AUTOMAT            A     36 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0129 A-CENCO AZUL VT            A      1 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0221 A-MC INT 148               A     40 51                                        ;</p><p class="line">; 20/05/19 SOW1006T 0227 A-MC INT 148               A      4 51                                        ;</p><p class="line">; 13/05/19 SOW4007B 0010 R-PREMIER                  R   6147 51                                        ;</p><p class="line">; 13/05/19 SOW4007B 0012 R-WAL MART                 R     30 51                                        ;</p><p class="line">; 13/05/19 SOW4007B 0016 R-NATIVA MCI               R  27377 51                                        ;</p><p class="line">; 11/03/19 SOW4007B 0019 R-GE                       R      3 51                                        ;</p><p class="line">; 11/04/19 SOW4007B 0019 R-GE                       R      4 51                                        ;</p><p class="line">; 13/05/19 SOW4007B 0019 R-GE                       R      9 51            ;</p>
+    </div>
+    
+<script>
+    window.onload = function() {
+        var lines = document.querySelectorAll('.line');
+        var delay = 0;
+        lines.forEach(function(line) {
+            line.style.animationDelay = delay + 's';
+            delay += 0.5;
+        });
+    }
+</script>
+
+   
+</body>
+
+</html>

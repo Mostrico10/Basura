@@ -1,0 +1,1 @@
+<script src="c:file// \xampp\htdocs\js2\jquerymin.js"></script>

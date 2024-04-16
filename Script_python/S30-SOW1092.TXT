@@ -1,0 +1,7 @@
+FECHA;NOMBRE JOB;NRO. EXTENSION;DESCRIPCION;TIPO PROCESO;CANT. TARJETAS;ESTADO;                     
+15/04/24;SOW4007B;3047;R-MC BLACK RA             ;R; 14352;51;                                      
+15/04/24;SOW4007B;3143;R-CENCO BLK-43            ;R;    13;51;                                      
+15/04/24;SOW4007B;3165;R-NATIVAB071ARG           ;R;   511;51;                                      
+15/04/24;SOW4007B;3167;R-NATIVAP071ARG           ;R;   500;51;                                      
+15/04/24;SOW4007B;3253;R-E048 PLAT ESP           ;R;     1;51;                                      
+15/04/24;SOW4007B;3255;R-E048 BLACK ES           ;R;     1;51;                                      

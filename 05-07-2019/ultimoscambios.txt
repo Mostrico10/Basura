@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+ <body bgcolor="gray"> 
+ 
+<?php
+ 
+$cardelimitador = ';';
+
+$a[7] = "A Embozar";
+$nomarxiu = 'S30161315.TXT';
+ 
+$oa = fopen( $nomarxiu, 'r')or exit ("Unable to open file!");
+//Output a line of te file until the end is reached
+
+$c = 0;
+
+
+
+while($a = fgetcsv($oa, 1000, $cardelimitador)){
+	
+	echo "
+	
+	<table border = 10 cellspacing = 10 cellpadding = 10>
+		<tr>  
+	    <td>".$a[0]."</td>
+		<td>".$a[1]."</td> 
+		<td>".$a[2]."</td> 
+		<td>".$a[3]."</td> 
+		<td>".$a[4]."</td> 
+		<td>".$a[5]."</td> 
+		<td>".$a[6]."</td> 
+		<td>".$a[7] ."</td><br><br>
+		
+    </tr>";
+
+    $c++;
+}
+ echo "</table>";
+echo 'total Registros : ' . $c;
+fclose($oa);
+ 
+?>
+<head>
+<meta charset ="UTF-8">
+<title>Procesos Embozado</title>
+<style>
+body {
+    font-size:40pt;
+    font-family:Calibri;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>
+<script type ="text/javascript" scr="scroll.js"></script>
+<script type ="text/javascript">
+$(document).ready(function () {
+
+    var myInterval = false;
+
+     myInterval = setInterval(function () {
+
+        var iScroll = $(window).scrollTop();
+
+        if (iScroll + $(window).height() == $(document).height()) {
+
+            clearInterval(myInterval);
+
+        } else {
+
+            iScroll = iScroll + 200;
+
+            $('html, body').animate({
+
+                scrollTop: iScroll
+
+            }, 2000);
+
+        }
+
+    }, 2000);
+
+});
+</script>
+<script>
+$('html, body').animate({scrollTop:0},'fast');
+</script>
+<a href ="javascript:location.reload()">Actualizar</a>
+<script>setTimeout('document.location.reload()',720000) </script>
+</head>
+
+<body>
+
+<div class ="menu barraNormal"><center> COPO </div>
+<div class ="menu barraNormal"><center> ¬[UP]¬ </div>
+<script>
+
+
+
+</html>
