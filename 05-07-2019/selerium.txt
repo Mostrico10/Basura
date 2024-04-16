@@ -1,0 +1,22 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+# Inicializar el navegador
+driver = webdriver.Chrome()  # Necesitas tener ChromeDriver instalado y en tu PATH
+driver.get("https://www.example.com")  # Reemplaza "https://www.example.com" por la URL de la página que desees
+
+# Obtener el tamaño de la página
+html = driver.find_element_by_tag_name('html')
+html.send_keys(Keys.END)  # Mover el scroll hasta el final de la página
+
+# Tiempo de espera para cargar el contenido
+time.sleep(2)
+
+# Simular autoscrolling
+for i in range(10):  # Cambia el número para ajustar la cantidad de veces que quieres hacer autoscrolling
+    html.send_keys(Keys.ARROW_UP)  # Mover el scroll hacia arriba
+    time.sleep(1)  # Esperar un segundo antes de seguir
+
+# Cerrar el navegador
+driver.quit()
